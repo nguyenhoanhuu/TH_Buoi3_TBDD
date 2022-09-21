@@ -13,7 +13,7 @@ const Home = ({ navigation }) => {
                 style={{ flex: 1, justifyContent: 'center' }}
             >
                 <View style={styles.header}>
-                    <Image source={require('../img/circle.png')} style={styles.circle} />
+                    <Image source={require('../img/circle.png')} />
                     <Text style={[styles.headerText, { marginTop: 50 }]}>GROW </Text>
                     <Text style={[styles.headerText]}>YOUR BUSINESS </Text>
                 </View>
@@ -46,14 +46,12 @@ const Home = ({ navigation }) => {
 const styles = StyleSheet.create({
     container: {
         flex: 1,
-        backgroundColor: 'linear-gradient(180deg, rgba(189, 246, 198, 0) 0%, #BDF6C6 100%)',
+       
     },
 
-    circle: {
-        marginTop: 50,
-    },
+  
     header: {
-        marginTop: 50,
+        marginTop: 30,
         fontWeight: 'bold',
         justifyContent: 'center',
         alignItems: 'center',
@@ -76,7 +74,7 @@ const styles = StyleSheet.create({
     body: {
         flexDirection: 'row',
         justifyContent: 'space-between',
-        marginTop: 90,
+        marginTop: 70,
         marginLeft: 50,
         marginRight: 50,
     },
